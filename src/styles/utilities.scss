@@ -1,0 +1,31 @@
+.shadow-lg { box-shadow: var(--shadow-lg); }
+.rounded-xl { border-radius: var(--radius-xl); }
+.rounded-lg { border-radius: var(--radius-lg); }
+.rounded-md { border-radius: var(--radius-md); }
+.muted { color: var(--color-muted); }
+.center { display: grid; place-items: center; }
+.space-y-16 > * + * { margin-top: 64px; }
+.space-y-8 > * + * { margin-top: 32px; }
+.mt-24 { margin-top: 96px; }
+.mb-24 { margin-bottom: 96px; }
+
+/* Additional spacing utilities */
+.py-20 { padding-top: 80px; padding-bottom: 80px; }
+.py-24 { padding-top: 96px; padding-bottom: 96px; }
+.py-32 { padding-top: 128px; padding-bottom: 128px; }
+.px-6 { padding-left: 24px; padding-right: 24px; }
+.px-8 { padding-left: 32px; padding-right: 32px; }
+
+/* Layout utilities */
+.flex-center { display: flex; align-items: center; justify-content: center; }
+.flex-between { display: flex; align-items: center; justify-content: space-between; }
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .py-24 { padding-top: 64px; padding-bottom: 64px; }
+  .py-32 { padding-top: 96px; padding-bottom: 96px; }
+}
+
+

@@ -1,0 +1,57 @@
+@use "sass:color";
+
+@use "variables" as *;
+@use "mixins" as *;
+@use "reset";
+@use "typography";
+@use "utilities";
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.container {
+  width: 100%;
+  // max-width: 1200px;
+  margin: 0 auto;
+  // padding: 0 24px;
+}
+
+.btn {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: color.scale(#5cc6a7, $lightness: 30%);
+  color: #0a2a24;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* Section spacing */
+.section {
+  padding: 64px 0;
+}
+
+.section--alt {
+  background: var(--color-surface);
+}
+
+
