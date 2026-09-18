@@ -2,7 +2,7 @@ import logo from '../../assets/Vector_logo.png'
 
 export function Header() {
   return (
-    <header style={{ 
+    <header id="top" style={{ 
       background: 'transparent', 
       position: 'sticky', 
       
@@ -32,42 +32,36 @@ export function Header() {
           }}>SPORTSNSTATS</strong>
         </div>
         <nav style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
-          <a href="#" style={{ 
+          <a href="#top" style={{ 
             color: '#1B4B5E', 
             fontWeight: 400, 
             fontSize: '16px',
             fontFamily: 'var(--font-sans)'
           }}>Home</a>
-          <a href="#" style={{ 
+          <a href="#about" style={{ 
             color: '#1B4B5E', 
             fontWeight: 400, 
             fontSize: '16px',
             fontFamily: 'var(--font-sans)'
-          }}>Booking</a>
-          <a href="#" style={{ 
+          }}>About</a>
+          <a href="#how-it-works" style={{ 
             color: '#1B4B5E', 
             fontWeight: 400, 
             fontSize: '16px',
             fontFamily: 'var(--font-sans)'
-          }}>Tournaments</a>
-          <a href="#" style={{ 
+          }}>How it works</a>
+          <a href="#features" style={{ 
             color: '#1B4B5E', 
             fontWeight: 400, 
             fontSize: '16px',
             fontFamily: 'var(--font-sans)'
-          }}>Player Profiles</a>
-          <a href="#" style={{ 
+          }}>Features</a>
+          <a href="#explore" style={{ 
             color: '#1B4B5E', 
             fontWeight: 400, 
             fontSize: '16px',
             fontFamily: 'var(--font-sans)'
-          }}>Coaching</a>
-          <a href="#" style={{ 
-            color: '#1B4B5E', 
-            fontWeight: 400, 
-            fontSize: '16px',
-            fontFamily: 'var(--font-sans)'
-          }}>Local Tournament News</a>
+          }}>In depth</a>
           <button className="btn btn--primary" style={{ 
             background: '#52B69A',
             color: '#FFFFFF',

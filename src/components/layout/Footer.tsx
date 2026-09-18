@@ -40,63 +40,63 @@ export function Footer() {
               }}>Quick Links</h4>
               <ul style={{ listStyle: 'none', padding: 0, marginTop:0 }}>
                 <li style={{ marginBottom: 8 }}>
-                  <a href="#" style={{ 
+                  <a href="#about" style={{ 
                     color: '#FFFFFF', 
                     fontSize:'20px',
                     fontFamily: 'var(--font-sans)',
                     fontWeight: 400
-                  }}>About us</a>
+                  }}>About</a>
                 </li>
                 <li style={{ marginBottom: 8 }}>
-                <a href="#" style={{ 
+                <a href="#how-it-works" style={{ 
                     color: '#FFFFFF', 
                     fontSize:'20px',
                     fontFamily: 'var(--font-sans)',
                     fontWeight: 400
-                  }}>Booking</a>
+                  }}>How it works</a>
                 </li>
                 <li style={{ marginBottom: 8 }}>
-                <a href="#" style={{ 
+                <a href="#features" style={{ 
                     color: '#FFFFFF', 
                     fontSize:'20px',
                     fontFamily: 'var(--font-sans)',
                     fontWeight: 400
-                  }}>Tournaments</a>
+                  }}>Features</a>
                 </li>
               </ul>
             </div>
             <div>
               <ul style={{ listStyle: 'none', padding: 0, marginTop: 70 }}>
                 <li style={{ marginBottom: 8 }}>
-                <a href="#" style={{ 
+                <a href="#explore" style={{ 
                     color: '#FFFFFF', 
                     fontSize:'20px',
                     fontFamily: 'var(--font-sans)',
                     fontWeight: 400
-                  }}>Player Profiles</a>
+                  }}>Cricket</a>
                 </li>
                 <li style={{ marginBottom: 8 }}>
-                <a href="#" style={{ 
+                <a href="#explore" style={{ 
                     color: '#FFFFFF', 
                     fontSize:'20px',
                     fontFamily: 'var(--font-sans)',
                     fontWeight: 400
-                  }}>Coaching</a>
+                  }}>Badminton</a>
                 </li>
                 <li style={{ marginBottom: 8 }}>
-                <a href="#" style={{ 
+                <a href="#explore" style={{ 
                     color: '#FFFFFF', 
                     fontSize:'20px',
                     fontFamily: 'var(--font-sans)',
                     fontWeight: 400
-                  }}>Local Tournament News</a>
+                  }}>Bookings</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
         <div style={{ 
-          borderTop: '1px solid #FFF)', 
+          borderTop: '1px solid rgba(255,255,255,0.35)', 
           paddingTop: 24, 
           display: 'flex',
           justifyContent: 'space-between',
@@ -110,7 +110,7 @@ export function Footer() {
             fontFamily: 'var(--font-sans)',
             fontWeight: 400
           }}>
-            Copyright © 2025, SNS. All rights reserved.
+            © 2026 TurfRank Technologies. SportsNStats is a product of TurfRank Technologies.
           </div>
           <div style={{ display: 'flex', gap: 16 }}>
             {/* Social Media Icons */}

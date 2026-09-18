@@ -61,7 +61,7 @@ export function HomePage() {
             fontWeight: 400,
             fontFamily: 'var(--font-sans)',
           }}>
-            Start Your Journey today empowering with best complexes
+            Tournaments, fixtures and live scoring — in one app
           </div>
           <h1 className="h1" style={{ 
             maxWidth: 950, 
@@ -73,7 +73,7 @@ export function HomePage() {
             letterSpacing:0.5,
             lineHeight:'129%'
           }}>
-            Discover the best complex 
+            Run your tournament
           </h1>
           <h1 className="h1" style={{ 
             maxWidth: 950, 
@@ -85,7 +85,7 @@ export function HomePage() {
             letterSpacing:0.5,
             lineHeight:'129%'
           }}>
-            & Coaches to play sports
+            like the pros do
           </h1>
           <p className="lead" style={{ 
             maxWidth: 720, 
@@ -97,7 +97,7 @@ export function HomePage() {
             letterSpacing:'0.5px',
             lineHeight:'129%'
           }}>
-            Join Capable to build authentic connections and share your passions effortlessly.
+            SportsNStats takes a tournament from sign-up to trophy — draws, fixtures, player auctions, ball-by-ball scoring and live standings. Built for cricket and badminton, with more sports on the way.
           </p>
           <button className="btn btn--primary" style={{ 
             background: '#4fbf9f',
@@ -110,7 +110,7 @@ export function HomePage() {
             borderRadius: '40px',
             cursor: 'pointer'
           }}>
-            Download App
+            Join the Waitlist
           </button>
 
           {/* Phone mockups placeholder */}
@@ -162,7 +162,7 @@ export function HomePage() {
 
       {/* About/Images grid */}
         
-          <div className="container" style={{ padding: '96px 64px 64px', background: '#FFFFFF' }}>
+          <div id="about" className="container" style={{ padding: '96px 64px 64px', background: '#FFFFFF', scrollMarginTop: 140 }}>
             <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between', gap: 28 }}>
               <div style={{ flex: '0 0 46%' }}>
                 <div className="badge" style={{ 
@@ -189,7 +189,7 @@ export function HomePage() {
                   lineHeight: '129%',
                   letterSpacing:'0.5px'
                 }}>
-                  Your One-Stop Solution for Booking Sports Complexes
+                  One platform for organisers, players and fans
                 </h2>
               </div>
               <div style={{ flex: '0 0 50%', display: 'flex' }}>
@@ -204,7 +204,7 @@ export function HomePage() {
                   margin: 0,
                   fontFamily: 'var(--font-sans)'
                 }}>
-                  Welcome to SportsNstats, your ultimate platform for booking sports complexes with ease and convenience. We bring together multiple sports facilities from across the city, all in one place, making it easier than ever to find and book the perfect venue for your next game, practice session, or event.
+                  SportsNStats is built by TurfRank Technologies for the people who actually run local sport. Organisers set up a tournament in minutes, players register and get drafted into teams, and every match is scored live from the ground — so standings, scorecards and results are always current, without a spreadsheet in sight. Cricket and badminton are fully supported today, with football next.
                 </p>
               </div>
             </div>
@@ -239,13 +239,13 @@ export function HomePage() {
             lineHeight: '129%',
             fontFamily: 'Sora, sans-serif',
           }}>
-            Empowering authentic connections for a vibrant social experience
+            Everything a tournament needs, from the first draw to the final
           </h2>
           <div className="grid-3" style={{ gap: 32 }}>
             {[
-              { label: 'Sports Complex', value: '500k+' },
-              { label: 'Communities', value: '200k+' },
-              { label: 'Coaches', value: '30k+' },
+              { label: 'Live cricket scoring', value: 'Ball by ball' },
+              { label: 'Live badminton scoring', value: 'Rally by rally' },
+              { label: 'Groups · Round robin · Knockout', value: '3 formats' },
             ].map((stat) => (
               <div key={stat.label} style={{ 
                 position: 'relative',
@@ -260,14 +260,14 @@ export function HomePage() {
                 <div className="h2" style={{ 
                   marginBottom: 8,
                   color: '#0E0B29',
-                  fontSize: '40px',
+                  fontSize: '36px',
                   fontWeight: 700,
                   fontFamily: 'Sora, sans-serif',
                 }}>{stat.value}</div>
                 <div style={{ 
                   color: '#0E0B29',
                   fontWeight: 400,
-                  fontSize: '28px',
+                  fontSize: '22px',
                   lineHeight: '129%',
                   fontFamily: 'Sora, sans-serif',
                 }}>{stat.label}</div>
@@ -278,7 +278,7 @@ export function HomePage() {
       </section>
 
       {/* How to use */}
-      <section className="section" style={{  padding:'0 64px 120px', background:'#FFFFFF' }}>
+      <section id="how-it-works" className="section" style={{  padding:'0 64px 120px', background:'#FFFFFF', scrollMarginTop: 140 }}>
         <div className="container" style={{ textAlign: 'center' }}>
           <div className="badge" style={{ 
             background: '#ECF3F1',
@@ -292,7 +292,7 @@ export function HomePage() {
             fontFamily: 'Sora, sans-serif',
             border: '1px solid #D3DDDA'
           }}>
-            How to Use
+            How it works
           </div>
           <h2 className="h2" style={{ 
             marginBottom: 16,
@@ -302,7 +302,7 @@ export function HomePage() {
             letterSpacing:'0.5px',
             fontWeight: 700
           }}>
-            Getting Started with Player Profiles
+            From sign-up to trophy in three steps
           </h2>
           <p className="lead" style={{ 
             maxWidth: 560, 
@@ -312,13 +312,13 @@ export function HomePage() {
             fontFamily: 'var(--font-sans)',
             fontSize: '20px'
           }}>
-            Follow these simple steps to set up your player profile and start connecting today.
+            Set up once, then let the platform handle the schedule, the scoring and the points table.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 32, padding:'20px 16px', height: 540 }}>
             {[
-              { title: 'Sign up and personalize your profile details.', img: Use1 },
-              { title: 'Explore & send connection request to users.', img: Use2 },
-              { title: 'Start chatting and share your moments.', img: Use3 },
+              { title: 'Book a venue and lock in your dates.', img: Use1 },
+              { title: 'Create the tournament and pick a format.', img: Use2 },
+              { title: 'Register teams and players, then play.', img: Use3 },
             ].map((item, i) => (
               <div key={i} style={{ 
                 borderRadius: 28, 
@@ -363,7 +363,7 @@ export function HomePage() {
       </section>
 
       {/* Features + mockup */}
-      <section className="section" style={{ padding:'0 60px 0', background:'#FFF' }}>
+      <section id="features" className="section" style={{ padding:'0 60px 0', background:'#FFF', scrollMarginTop: 140 }}>
         {/* Row 1: Text left, stacked phones right */}
         <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, alignItems: 'center', marginBottom: 80 }}>
           <div>
@@ -375,7 +375,7 @@ export function HomePage() {
               fontWeight: 700,
               fontSize: '42px'
             }}>
-              Explore Booking Key Features
+              Fixtures that build themselves
             </h2>
             <p className="lead" style={{ 
               marginBottom: 30,
@@ -384,13 +384,13 @@ export function HomePage() {
               fontFamily: 'var(--font-sans)',
               color: '#535353'
             }}>
-              Explore advanced booking capabilities designed to elevate your social experience and interactions. Explore advanced booking capabilities designed to elevate your social experience and interactions.
+              Choose groups, round robin or knockout — or chain them together. The platform draws the groups, seeds the bracket, hands out byes and promotes qualifiers to the next stage on its own.
             </p>
             <div style={{ display: 'grid', gap: 12 }}>
               {[
-                'Smart matching algorithm for tailored connections.',
-                'Customizable selection for personal expression.',
-                'Real time notifications for instant updates.',
+                'Automatic or manual group draws, with seeding and byes.',
+                'Knockout brackets generated straight from the standings.',
+                'Live points table with net run rate, updated every ball.',
               ].map((feature, i) => (
                 <div key={i} style={{ 
                   background: '#ECF3F1', 
@@ -456,17 +456,17 @@ export function HomePage() {
               fontWeight: 700,
               fontSize: '42px'
             }}>
-              Capable’s Advanced Tournament Capabilities
+              Live scoring built for the ground
             </h2>
             <p className="lead" style={{ marginBottom: 30, fontWeight:400, fontSize:'20px', fontFamily: 'var(--font-sans)', color: '#535353' }}>
-              Explore advanced booking capabilities designed to elevate your social experience and interactions. Explore advanced booking capabilities designed to elevate your social experience and interactions.
+              Score from a phone at the boundary rope. Every delivery and every rally is recorded as it happens — with undo for when it isn't — and followers watch the scorecard update live.
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
               {[
-                'Seamless cross-platform access on all devices.',
-                'Advanced search filters to find Complex.',
-                'Integrated calendar for event scheduling.',
-                'Real-time translation for global communication.'
+                'Cricket: toss, innings, and ball-by-ball with extras and wickets.',
+                'Badminton: rally engine with golden point and deuce cap.',
+                'Undo the last ball or rally — no questions asked.',
+                'Live polling so fans follow along from anywhere.'
               ].map((text, i) => (
                 <div key={i} style={{
                   display: 'flex',
@@ -487,8 +487,9 @@ export function HomePage() {
       </section>
 
       {/* News cards */}
-      <section className="section section--alt" style={{ 
+      <section id="explore" className="section section--alt" style={{ 
         padding:'100px 60px 0px',
+        scrollMarginTop: 140,
         background: '#FFFFFF'
       }}>
         <div className="container" style={{ textAlign: 'center' }}>
@@ -504,7 +505,7 @@ export function HomePage() {
             margin: '0 auto 20px',
             width: 'fit-content'
           }}>
-            News
+            In depth
           </div>
           <h2 className="h2" style={{ 
             marginBottom: 16,
@@ -515,7 +516,7 @@ export function HomePage() {
             letterSpacing:'0.5px',
             lineHeight:'129%'
           }}>
-            Latest Local Tournament News
+            Built around how tournaments are really played
           </h2>
           <p className="lead" style={{ 
             maxWidth: 680, 
@@ -525,13 +526,28 @@ export function HomePage() {
             fontFamily: 'var(--font-sans)',
             fontWeight:400,
           }}>
-            Discover expert packing tips to maximize your luggage space and minimize stress. Learn how to pack efficiently, choose the right luggage, and avoid.
+            A closer look at the three things organisers ask us for most.
           </p>
           <div className="grid-3" style={{ gap: 28 }}>
             {[
-              { title: 'The Ultimate Guide to Improving Your Goal on Football', date: 'August 1, 2025', img: News1 },
-              { title: '10 Secrets to Mastering the Perfect Golf Swing', date: 'August 15, 2025', img: News2 },
-              { title: 'Game On: The Ultimate Guide to Improving Your Tennis Serve', date: 'August 18, 2025', img: News3 },
+              {
+                title: 'Player auctions that build balanced squads',
+                tag: 'Cricket',
+                body: 'Set a purse and base prices, bid live, reserve squad slots with a max bid, and re-auction unsold players in later rounds — IPL-style, for your local league.',
+                img: News1,
+              },
+              {
+                title: 'One tournament, five events, five draws',
+                tag: 'Badminton',
+                body: "Men's and women's singles, doubles and mixed — each with its own entries, its own format, and standings ranked in BWF order.",
+                img: News2,
+              },
+              {
+                title: 'Find a turf, book a slot, pay in-app',
+                tag: 'Bookings',
+                body: 'Search venues by sport and distance, pick a time slot, and pay securely by UPI, card or wallet. Hosts manage hours, pricing and bookings from the same app.',
+                img: News3,
+              },
             ].map((article, i) => (
               <article key={i} style={{ 
                 textAlign: 'left', 
@@ -550,8 +566,8 @@ export function HomePage() {
                   overflow: 'hidden'
                 }}>
                   <img src={article.img} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-                  <div style={{ position: 'absolute', left: 16, bottom: 16, background: '#B9B9B9', color: '#FCFCFC', padding: '12px 24px', borderRadius: 999, fontWeight: 600, fontSize: 18 }}>
-                    {article.date}
+                  <div style={{ position: 'absolute', left: 16, bottom: 16, background: '#4FBF9F', color: '#FFFFFF', padding: '10px 20px', borderRadius: 999, fontWeight: 600, fontSize: 18 }}>
+                    {article.tag}
                   </div>
                 </div>
                 <h3 className="h3" style={{ 
@@ -571,7 +587,7 @@ export function HomePage() {
                   fontFamily: 'var(--font-sans)',
                   lineHeight: 1.6
                 }}>
-                  Discover expert packing tips to maximize your luggage space and minimize stress. Learn how to pack efficiently, choose the right luggage, and avoid.
+                  {article.body}
                 </p>
                 <button className="btn" style={{ 
                   background: '#FFFFFF',
@@ -585,7 +601,7 @@ export function HomePage() {
                   cursor: 'pointer',
                   width: '100%'
                 }}>
-                  Read More
+                  Learn more
                 </button>
               </article>
             ))}
@@ -616,7 +632,7 @@ export function HomePage() {
                 fontFamily: 'var(--font-sans)',
                 lineHeight: '54px'
               }}>
-                Discover a New Era of Fitness with our SportsNstats App
+                Take your tournament with you — the SportsNStats app
               </h2>
               <p className="lead" style={{ 
                 marginBottom: 32,
@@ -627,7 +643,7 @@ export function HomePage() {
                 fontFamily: 'var(--font-sans)',
                 lineHeight: '26px'
               }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                Organise, score and follow from iOS and Android. Coming soon to the App Store and Google Play — join the waitlist for early access.
               </p>
               <div style={{ display: 'flex', gap: 16 }}>
                 <img src={GooglePlayBadge} style={{ height: 60, width: 'auto' }} />
