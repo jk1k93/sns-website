@@ -40,7 +40,7 @@ export function Footer() {
               }}>Quick Links</h4>
               <ul style={{ listStyle: 'none', padding: 0, marginTop:0 }}>
                 <li style={{ marginBottom: 8 }}>
-                  <a href="#about" style={{ 
+                  <a href="/#about" style={{ 
                     color: '#FFFFFF', 
                     fontSize:'20px',
                     fontFamily: 'var(--font-sans)',
@@ -48,7 +48,7 @@ export function Footer() {
                   }}>About</a>
                 </li>
                 <li style={{ marginBottom: 8 }}>
-                <a href="#how-it-works" style={{ 
+                <a href="/#how-it-works" style={{ 
                     color: '#FFFFFF', 
                     fontSize:'20px',
                     fontFamily: 'var(--font-sans)',
@@ -56,7 +56,7 @@ export function Footer() {
                   }}>How it works</a>
                 </li>
                 <li style={{ marginBottom: 8 }}>
-                <a href="#features" style={{ 
+                <a href="/#features" style={{ 
                     color: '#FFFFFF', 
                     fontSize:'20px',
                     fontFamily: 'var(--font-sans)',
@@ -68,7 +68,7 @@ export function Footer() {
             <div>
               <ul style={{ listStyle: 'none', padding: 0, marginTop: 70 }}>
                 <li style={{ marginBottom: 8 }}>
-                <a href="#explore" style={{ 
+                <a href="/#explore" style={{ 
                     color: '#FFFFFF', 
                     fontSize:'20px',
                     fontFamily: 'var(--font-sans)',
@@ -76,7 +76,7 @@ export function Footer() {
                   }}>Cricket</a>
                 </li>
                 <li style={{ marginBottom: 8 }}>
-                <a href="#explore" style={{ 
+                <a href="/#explore" style={{ 
                     color: '#FFFFFF', 
                     fontSize:'20px',
                     fontFamily: 'var(--font-sans)',
@@ -84,7 +84,7 @@ export function Footer() {
                   }}>Badminton</a>
                 </li>
                 <li style={{ marginBottom: 8 }}>
-                <a href="#explore" style={{ 
+                <a href="/#explore" style={{ 
                     color: '#FFFFFF', 
                     fontSize:'20px',
                     fontFamily: 'var(--font-sans)',
@@ -111,6 +111,8 @@ export function Footer() {
             fontWeight: 400
           }}>
             © 2026 TurfRank Technologies. SportsNStats is a product of TurfRank Technologies.
+            {' · '}
+            <a href="/privacy-policy" style={{ color: '#FFFFFF', textDecoration: 'underline' }}>Privacy Policy</a>
           </div>
           <div style={{ display: 'flex', gap: 16 }}>
             {/* Social Media Icons */}

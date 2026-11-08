@@ -1,0 +1,175 @@
+// The global typography sets Karantina (a display face) on p and headings;
+// long-form legal text needs the body face throughout.
+.legal {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  padding: 32px 16px 0;
+
+  &__inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  &__hero {
+    padding: 32px 0 24px;
+    border-bottom: 1px solid #e3ebe8;
+    margin-bottom: 32px;
+  }
+
+  &__eyebrow {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-primary-dark);
+    background: #e8f5ee;
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-family: var(--font-sans);
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #184e77;
+    margin: 0 0 8px;
+  }
+
+  &__meta {
+    font-size: 15px;
+    margin: 0 0 20px;
+  }
+
+  &__intro {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--color-text);
+    margin: 0;
+  }
+
+  &__toc {
+    background: var(--color-bg);
+    border: 1px solid #e3ebe8;
+    border-radius: var(--radius-lg);
+    padding: 20px 24px;
+    margin-bottom: 40px;
+
+    ol {
+      margin: 0;
+      padding-left: 20px;
+      columns: 2;
+      column-gap: 32px;
+    }
+
+    li {
+      font-size: 15px;
+      line-height: 1.5;
+      padding: 3px 0;
+      break-inside: avoid;
+    }
+
+    a {
+      color: var(--color-primary-dark);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__toc-title {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+    margin-bottom: 10px;
+  }
+
+  &__section {
+    margin-bottom: 40px;
+    scroll-margin-top: 140px;
+
+    h2 {
+      font-family: var(--font-sans);
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: #184e77;
+      margin: 0 0 14px;
+    }
+
+    h3 {
+      font-family: var(--font-sans);
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--color-text);
+      margin: 22px 0 8px;
+    }
+
+    p,
+    li {
+      font-family: var(--font-sans);
+      font-size: 16px;
+      line-height: 1.7;
+      color: #3a4150;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 12px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    strong {
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    a {
+      color: var(--color-primary-dark);
+      font-weight: 500;
+      word-break: break-word;
+    }
+
+    &--highlight {
+      background: #f1f9f6;
+      border: 1px solid #cbe8dc;
+      border-radius: var(--radius-lg);
+      padding: 28px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding-top: 8px;
+
+    &__title {
+      font-size: 34px;
+    }
+
+    &__intro {
+      font-size: 16px;
+    }
+
+    &__toc ol {
+      columns: 1;
+    }
+
+    &__section--highlight {
+      padding: 20px;
+    }
+  }
+}

@@ -32,31 +32,31 @@ export function Header() {
           }}>SPORTSNSTATS</strong>
         </div>
         <nav style={{ display: 'flex', gap: 32, alignItems: 'center' }}>
-          <a href="#top" style={{ 
+          <a href="/#top" style={{ 
             color: '#1B4B5E', 
             fontWeight: 400, 
             fontSize: '16px',
             fontFamily: 'var(--font-sans)'
           }}>Home</a>
-          <a href="#about" style={{ 
+          <a href="/#about" style={{ 
             color: '#1B4B5E', 
             fontWeight: 400, 
             fontSize: '16px',
             fontFamily: 'var(--font-sans)'
           }}>About</a>
-          <a href="#how-it-works" style={{ 
+          <a href="/#how-it-works" style={{ 
             color: '#1B4B5E', 
             fontWeight: 400, 
             fontSize: '16px',
             fontFamily: 'var(--font-sans)'
           }}>How it works</a>
-          <a href="#features" style={{ 
+          <a href="/#features" style={{ 
             color: '#1B4B5E', 
             fontWeight: 400, 
             fontSize: '16px',
             fontFamily: 'var(--font-sans)'
           }}>Features</a>
-          <a href="#explore" style={{ 
+          <a href="/#explore" style={{ 
             color: '#1B4B5E', 
             fontWeight: 400, 
             fontSize: '16px',
