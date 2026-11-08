@@ -99,12 +99,6 @@ export function PrivacyPolicyPage() {
               notifications such as booking reminders, if you allow notifications.
             </li>
           </ul>
-          <h3>Payments</h3>
-          <p>
-            Payments for bookings are processed by Razorpay. Your card, UPI or bank details are entered
-            with Razorpay and are never received or stored by us. We keep a record of each payment (amount,
-            status and Razorpay reference) so we can confirm and refund bookings.
-          </p>
         </section>
 
         <section id="how-we-use" className="legal__section">
@@ -147,7 +141,6 @@ export function PrivacyPolicyPage() {
           <h2>4. Who we share it with</h2>
           <p>We share information only with service providers that help us run the app:</p>
           <ul>
-            <li><strong>Razorpay</strong> — payment processing.</li>
             <li><strong>Cloudflare</strong> — storage of uploaded photos.</li>
             <li><strong>Render</strong> and <strong>Neon</strong> — hosting of our servers and database.</li>
             <li><strong>Expo</strong> and <strong>Google Firebase Cloud Messaging</strong> — delivery of push notifications.</li>
