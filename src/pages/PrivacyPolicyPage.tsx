@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import './privacy-policy.scss'
 
-// TODO before deploying: the address people write to for privacy questions and deletion requests.
+// Where people write for privacy questions and account deletion requests.
 const CONTACT_EMAIL = 'admin@turfranktechnologies.com'
 const LAST_UPDATED = '8 November 2026'
 
