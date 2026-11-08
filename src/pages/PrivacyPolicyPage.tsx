@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import logo from '../assets/Vector_logo.png'
 import './privacy-policy.scss'
 
 // Where people write for privacy questions and account deletion requests.
@@ -26,8 +27,14 @@ export function PrivacyPolicyPage() {
   }, [])
 
   return (
-    <main className="legal">
-      <div className="legal__inner">
+    <div className="legal">
+      <header className="legal__bar">
+        <a href="/" className="legal__brand" aria-label="SportsNStats home">
+          <img src={logo} alt="" />
+          <span>SPORTSNSTATS</span>
+        </a>
+      </header>
+      <main className="legal__inner">
         <header className="legal__hero">
           <span className="legal__eyebrow">Legal</span>
           <h1 className="legal__title">Privacy Policy</h1>
@@ -245,7 +252,10 @@ export function PrivacyPolicyPage() {
             <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
           </p>
         </section>
-      </div>
-    </main>
+      </main>
+      <footer className="legal__footer">
+        © {new Date().getFullYear()} TurfRank Technologies · <a href="/">turfranktechnologies.com</a>
+      </footer>
+    </div>
   )
 }

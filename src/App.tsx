@@ -8,10 +8,14 @@ import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage'
 const isPrivacyPolicy = window.location.pathname.replace(/\/+$/, '') === '/privacy-policy'
 
 function App() {
+  // The policy is mostly read inside the app's in-app browser, on a phone, so
+  // it has its own slim header and footer instead of the marketing ones.
+  if (isPrivacyPolicy) return <PrivacyPolicyPage />
+
   return (
     <div>
       <Header />
-      {isPrivacyPolicy ? <PrivacyPolicyPage /> : <HomePage />}
+      <HomePage />
       <Footer />
     </div>
   )
