@@ -113,6 +113,8 @@ export function Footer() {
             © 2026 TurfRank Technologies. SportsNStats is a product of TurfRank Technologies.
             {' · '}
             <a href="/privacy-policy" style={{ color: '#FFFFFF', textDecoration: 'underline' }}>Privacy Policy</a>
+            {' · '}
+            <a href="/terms" style={{ color: '#FFFFFF', textDecoration: 'underline' }}>Terms of Service</a>
           </div>
           <div style={{ display: 'flex', gap: 16 }}>
             {/* Social Media Icons */}

@@ -1,4 +1,4 @@
-// The global typography sets Karantina (a display face) directly on p, h1–h3
+// Shared by the legal pages. The global typography sets Karantina (a display face) directly on p, h1–h3
 // and lists inherit it, so every text element here resets to the body face.
 .legal {
   font-family: var(--font-sans);
@@ -103,6 +103,12 @@
     line-height: 1.7;
     color: var(--color-text);
     margin: 0;
+
+    a {
+      color: var(--color-primary-dark);
+      font-weight: 500;
+      text-decoration: underline;
+    }
   }
 
   &__toc {

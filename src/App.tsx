@@ -3,14 +3,15 @@ import { Header } from './components/layout/Header'
 import { Footer } from './components/layout/Footer'
 import { HomePage } from './pages/HomePage'
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage'
+import { TermsPage } from './pages/TermsPage'
 
 // Vercel rewrites every path to index.html, so the page is picked here.
-const isPrivacyPolicy = window.location.pathname.replace(/\/+$/, '') === '/privacy-policy'
+const path = window.location.pathname.replace(/\/+$/, '')
 
 function App() {
-  // The policy is mostly read inside the app's in-app browser, on a phone, so
-  // it has its own slim header and footer instead of the marketing ones.
-  if (isPrivacyPolicy) return <PrivacyPolicyPage />
+  // The legal pages bring their own slim header and footer (LegalLayout).
+  if (path === '/privacy-policy') return <PrivacyPolicyPage />
+  if (path === '/terms') return <TermsPage />
 
   return (
     <div>
